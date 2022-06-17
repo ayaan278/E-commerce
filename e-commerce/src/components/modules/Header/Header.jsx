@@ -8,7 +8,6 @@ import { Button,
     VStack,
     Drawer, 
     DrawerBody, 
-    // DrawerFooter, 
     DrawerHeader, 
     DrawerOverlay, 
     DrawerContent,
@@ -29,7 +28,7 @@ export default function Header() {
         bg="#2A254B"
         color='white'
         justifyContent={'flex-start'}>
-            <HStack w="20%">
+            <HStack w={{base: '50%', md: '20%', lg: '20%'}}>
                 <Show breakpoint='(max-width: 600px)'>
                     <MobileHeader/>
                 </Show>
@@ -38,11 +37,13 @@ export default function Header() {
             <Spacer />
             <Hide breakpoint='(max-width: 600px)'>
                 <HStack
-                    w="60%"
-                    justifyContent={'center'} >
+                    w={{base: '0', md: '40%', lg: '60%'}}
+                    justifyContent={'center'} 
+                    >
                     <Link href="/">
                         <Button colorScheme="cyan"
-                                variant='ghost'>
+                                variant='ghost'
+                                >
                             Home
                         </Button>
                     </Link>
@@ -67,7 +68,7 @@ export default function Header() {
                 </HStack>
             </Hide>
             <Spacer />
-            <HStack w="20%" 
+            <HStack w={{base: '35%', md: '20%', lg: '20%'}} 
                     pt="0.5em"
                     pr="0.5em"
                     justifyContent={'right'}>

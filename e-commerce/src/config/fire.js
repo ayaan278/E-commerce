@@ -22,8 +22,8 @@ const firebaseConfig = {
   projectId: "single-inquiry-342204",
   storageBucket: "single-inquiry-342204.appspot.com",
   messagingSenderId: "865309671911",
-  appId: "1:865309671911:web:0297378718f5cad5fc7d42",
-  measurementId: "G-X6RBH4YQ06"
+  appId: "1:865309671911:web:68c9cc0a47abf3c4fc7d42",
+  measurementId: "G-KG2BZC19M7"
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);

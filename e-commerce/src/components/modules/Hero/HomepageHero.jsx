@@ -14,21 +14,28 @@ const HomepageHero = () => {
     <Center w="100%" pt="2em" color="white">
         <Container maxW="container.xl">
             <Stack bg="teal" direction={[ 'column', 'row']}>
-                <VStack w="60%" pos="relative"> 
-                    <Box p="4em" float="left">
-                        <Heading fontSize="3xl" fontWeight="600"  >The furniture brand for the future, 
+                <VStack w={{base: '350px', md: '550px', lg: '60%'}} pos="relative" > 
+                    <Box p={{base: '2em', md: '3em', lg: '4em'}} float="left">
+                        <Heading fontSize={{base: 'xl', md: '2xl', lg: '3xl'}} 
+                                fontWeight="600"  
+                                align="center">The furniture brand for the future, 
                             with timeless designs</Heading>
                     </Box>
-                    <Box pos="absolute" top="60" left="20">
+                    <Box align="center">
                         <ViewCollection />  
                     </Box>
-                    <Box pt="8em" pl="5em" pr="5em">
-                        <Heading fontSize="md" fontWeight="350">A new era in eco friendly furniture with Avelon, the French luxury retail brand
+                    <Box pt={{base: "3em", md: "4em", lg: "8em"}} 
+                        pl={{base: "2em", md: "3em", lg: "5em"}}
+                        pr={{base: "2em", md: "3em", lg: "5em"}}
+                        pb={{base: "2em", md: "2em", lg: "3em"}}>
+                        <Heading fontSize="md" fontWeight="350"
+                                    align="center">A new era in eco friendly furniture with Avelon, the French luxury retail brand
                                 with nice fonts, tasteful colors and a beautiful way to display things digitally 
                                 using modern web technologies.</Heading>
                     </Box>
                 </VStack>
-                <VStack w="40%">
+                <VStack justify="center" p={{base: '0', md: '1.5em', lg: '0'}}
+                    w={{base: '100%', md: '600px', lg: '40%'}}>
                     <Image
                     objectFit="contain"
                     borderRadius="md"

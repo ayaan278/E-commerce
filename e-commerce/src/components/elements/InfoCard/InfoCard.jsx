@@ -14,10 +14,11 @@ const InfoCard = (props) => {
         gap="3px"
         borderRadius={'16px'}
         alignItems="left"
-        pl={5}
-        w={[150, 160, 170, 280]}
-        h={[200, 250]}>
-        <HStack pt="0.5em" style={{fontSize: '30px'}}>
+        pl={3}
+        w={{base: '170px', md: '180px', lg:'280px'}}
+        h={[250, 275, 300]}
+        overflow="hidden">
+        <HStack pt="0.5em" fontSize={{base: '16px', md: '24px', lg: '30px'}}>
               {icon}
         </HStack>
         <HStack>

@@ -15,7 +15,7 @@ import { FcApproval } from "react-icons/fc"
 //   }
 const InfoDivider = () => {
   return (
-    <Center pt="3em" h="400px">
+    <Center pt="3em">
         <Container maxW="container.xl" bg="#2A254B">
             <Heading    fontSize={{base: 'md',md: 'lg',lg: '2xl'}} 
                         fontWeight={700} 
@@ -25,7 +25,7 @@ const InfoDivider = () => {
                         pl="1em">
                 What Makes Our Brand Different
             </Heading> 
-            <Stack p="2em" align="center"
+            <Stack p="2em" justify="center"
             direction={[ 'column', 'row']}>
                 <HStack>
                     <InfoCard 
