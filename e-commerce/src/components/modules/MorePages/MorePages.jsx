@@ -1,5 +1,5 @@
 import React from 'react'
-import { Center, Container, HStack , Link} from '@chakra-ui/react'
+import { Center, HStack , Link} from '@chakra-ui/react'
 import Pages from '../../elements/Buttons/Pages'
 const MorePages = () => {
   return (
@@ -10,9 +10,6 @@ const MorePages = () => {
             </Link>
             <Link href="/shop-02">
             <Pages number="2"/>
-            </Link>
-            <Link href="/shop-03">
-            <Pages number="3"/>
             </Link>
         </HStack>
     </Center>

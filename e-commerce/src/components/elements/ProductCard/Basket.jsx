@@ -1,30 +1,25 @@
 import React from 'react'
-import { Center, Container, HStack, VStack, Image, Heading } from '@chakra-ui/react'
-
+import { Center, Container, HStack, VStack, Image, Heading, Button} from '@chakra-ui/react'
+import { useCart } from "react-use-cart";
 const Basket = (props) => {
-    const { image, title, price, description } = props;
-    
+    const { image, title, price } = props;
+    const { addItem } = useCart();
     return (
     <Center>
-        <Container>
-            <HStack>
+        <Container maxW="container.lg">
+            <VStack h={{base: '120px', md: '150px', lg: '400px'}}>
+                <HStack >
+                    <Image
+                        objectFit="fill"
+                        borderRadius="md"
+                        src={image}
+                        alt="product image"/>
+                </HStack>
                 <VStack>
-                <Image
-                    objectFit="fill"
-                    borderRadius="md"
-                    src={image}
-                    alt="pic 2"/>
-                </VStack>
-                <VStack>
-                    <Heading 
+                    <Heading align="center"
                         fontSize={{base: 'lg',md: 'xl',lg: '2xl'}} 
-                        fontWeight={500}>
+                        fontWeight={450}>
                         {title}
-                    </Heading>
-                    <Heading 
-                        fontSize={{base: 'md',md: 'lg',lg: 'xl'}} 
-                        fontWeight={300}>
-                        {description}
                     </Heading>
                     <Heading
                         fontSize={{base: 'sm',md: 'md',lg: 'lg'}} 
@@ -32,7 +27,12 @@ const Basket = (props) => {
                         {price}
                     </Heading>
                 </VStack>
-            </HStack>
+                <HStack justify={'right'}>
+                    <Button size="sm"
+                        onClick={() => addItem(props.item)}
+                        >Add to Cart</Button>
+                </HStack>
+            </VStack>
         </Container>
     </Center>
   )

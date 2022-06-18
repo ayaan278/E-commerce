@@ -22,7 +22,6 @@ function App() {
               <Route path="/about" element = {<About/>} />
               <Route exact path="/shop" element = {<Shop/>} />
               <Route exact path="/shop-02" element = {<Shop2/>} />
-              <Route exact path="/shop-03" element = {<Shop3/>} />
               <Route exact path="/contact" element = {<Contact/>} />
               <Route exact path="/cart" element = {<Cart/>} />
               <Route exact path="/log-in" element = {<Login/>} />

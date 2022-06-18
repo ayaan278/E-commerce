@@ -1,6 +1,6 @@
 import React from 'react'
 import { Center , Container, Stack, HStack, VStack } from '@chakra-ui/react'
-import Display from '../../elements/ProductCard/Display'
+import Basket from '../../elements/ProductCard/Basket'
 import chair1 from '../../../assets/Products/Chair1.jpg'
 import vase1 from '../../../assets/Products/Vase1.jpg'  
 import vase2 from '../../../assets/Products/Vase2.jpg'
@@ -19,22 +19,22 @@ const Store2 = () => {
             direction={[ 'column', 'row']}>
                 <VStack >
                     <HStack>
-                        <Display image={Fur3} title="The Wooden Platinum" price="350$" tags="furniture"/>
-                        <Display image={vase1} title="The Hula Vase" price="50$" tags="vase"/>
+                        <Basket image={Fur3} title="The Wooden Platinum" price="350$" tags="furniture"/>
+                        <Basket image={vase1} title="The Hula Vase" price="50$" tags="vase"/>
                     </HStack>
                     <HStack>
-                        <Display image={lamp1} title="The Trinker Lamp" price="70$" tags="lights"/>
-                        <Display image={vase2} title="Rustic Vase set" price="100$" tags="vase"/>
+                        <Basket image={lamp1} title="The Trinker Lamp" price="70$" tags="lights"/>
+                        <Basket image={vase2} title="Rustic Vase set" price="100$" tags="vase"/>
                     </HStack>
                 </VStack>
                 <VStack>
                     <HStack>
-                        <Display image={sofa1} title="Grey Rust Sofa" price="450$" tags="sofa"/>
-                        <Display image={Fur1} title="Two birds furniture" price="200$" tags="furniture"/>
+                        <Basket image={sofa1} title="Grey Rust Sofa" price="450$" tags="sofa"/>
+                        <Basket image={Fur1} title="Two birds furniture" price="200$" tags="furniture"/>
                     </HStack>
                     <HStack>
-                        <Display image={sofa2} title="Velvet Sofa" price="150$" tags="sofa"/>
-                        <Display image={Fur2} title="Rust furniture set" price="200$" tags="furniture"/>
+                        <Basket image={sofa2} title="Velvet Sofa" price="150$" tags="sofa"/>
+                        <Basket image={Fur2} title="Rust furniture set" price="200$" tags="furniture"/>
                     </HStack>
                 </VStack>
             

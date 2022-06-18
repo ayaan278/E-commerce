@@ -13,7 +13,7 @@ const Display = (props) => {
 
     return (
         <Center>
-            <Container p="1em">
+            <Container p="1em" maxW="container.md">
                 <VStack id={tags}>
                     <HStack>
                         <Image
@@ -21,7 +21,7 @@ const Display = (props) => {
                          objectFit="fill"
                          borderRadius="md"
                          src={image}
-                         alt="pic 2"/>
+                         alt="product"/>
                     </HStack>
                     <VStack m="1em">
                         <Heading 
