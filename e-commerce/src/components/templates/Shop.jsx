@@ -1,8 +1,7 @@
 import React from 'react'
 import Filters from '../modules/Filters/Filters'
-import { HStack, VStack, Heading} from '@chakra-ui/react'
+import { HStack, VStack, Heading, Show} from '@chakra-ui/react'
 import Store from '../modules/Store/Store'
-import MorePages from '../modules/MorePages/MorePages';
 const Shop = (props) => {
   
   return (
@@ -16,7 +15,6 @@ const Shop = (props) => {
         <Filters/>
         <Store/>
       </HStack>
-      <MorePages/>
     </VStack>
   )
 }
