@@ -18,27 +18,27 @@ const Footers = () => {
 
             <VStack gap="5px" alignItems={'flex-start'} w="50%" >
               <Heading color="white" size='md'>Menu</Heading>
-              <Link>
+              <Link href="/coming-soon">
                 <span>
                   All Products
                 </span>
               </Link>
-              <Link>
+              <Link href="/coming-soon">
                 <span>
                   Top Seller
                 </span>
               </Link>
-              <Link>
+              <Link href="/coming-soon">
                 <span>
                   Popular Products
                 </span>
               </Link>
-              <Link>
+              <Link href="/coming-soon">
                 <span>
                   New Arrivals
                 </span>
               </Link>
-              <Link>
+              <Link href="/coming-soon">
                 <span>
                   Recently viewed
                 </span>
@@ -47,23 +47,27 @@ const Footers = () => {
 
             <VStack gap="5px" alignItems={'flex-start'} w="50%" >
               <Heading size='md'>Our Company</Heading>
-              <Link>
+              <Link href="/about">
                 <span>
                   About Us
                 </span>
-              </Link><Link>
+              </Link>
+              <Link href="/coming-soon">
                 <span>
                   Vacancies
                 </span>
-              </Link><Link>
+              </Link>
+              <Link href="/contact">
                 <span>
                   Contact Us
                 </span>
-              </Link><Link>
+              </Link>
+              <Link href="/coming-soon">
                 <span>
                   Privacy Policy
                 </span>
-              </Link><Link>
+              </Link>
+              <Link href="/coming-soon">
                 <span>
                   Terms and Conditions
                 </span>
@@ -82,22 +86,22 @@ const Footers = () => {
           </HStack>
 
           <HStack w={{base: '50%',md: '50%',lg: '40%'}} gap="1em" p="1em">
-            <Link>
+            <Link href="">
               <span size='md' class="inline-block h-12 w-12 rounded-full ring-white">
                 <FaFacebook  style={{fontSize: '30px'}}/>
               </span>
             </Link>
-            <Link>
+            <Link href="">
               <span size='md' class="inline-block h-12 w-12 ring-white" >
                 <FaInstagram style={{fontSize: '30px'}}/>
               </span>
             </Link>
-            <Link>
+            <Link href="">
               <span size='md' class="inline-block h-12 w-12 ring-white">
                 <FaGithub  style={{fontSize: '30px'}}/>
               </span>
             </Link>
-            <Link>
+            <Link href="">
               <span size='md' class="inline-block h-12 w-12 ring-white">
                 <FaLinkedin style={{fontSize: '30px'}}/>
               </span>

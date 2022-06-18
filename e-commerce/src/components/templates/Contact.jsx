@@ -1,6 +1,8 @@
 import React from 'react'
 import { Center, Container, HStack, VStack, Heading} from '@chakra-ui/react'
 import { MdOutlineLocationOn, MdCall, MdEmail } from "react-icons/md";
+import { Player } from '@lottiefiles/react-lottie-player';
+import Furniture from '../../assets/Lottie/Furniture.json'
 const Contact = () => {
   return (
     <Center pt="3em">
@@ -35,6 +37,20 @@ const Contact = () => {
                     fontWeigth="450px">ayaanishere08@gmail.com</Heading>
           </VStack>
         </HStack>
+        <VStack justifyContent="center" p="2em">
+                <Heading>Build your Perfect Home with us</Heading>
+                <HStack p="1em" 
+                        w={{base: '500px', md: '600px', lg: '1000px'}}
+                        h={{base: '300px', md: '400px', lg: '500px'}}
+                        justifyContent="center">
+                        <Player autoplay
+                                controls
+                                loop
+                                mode="normal"
+                                src={Furniture}>
+                        </Player>
+                </HStack>
+        </VStack>
       </Container>
     </Center>
   )
