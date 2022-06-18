@@ -1,33 +1,38 @@
 import React from 'react'
 import { Center, Container, HStack, VStack, Image, Heading, Button} from '@chakra-ui/react'
 import { useCart } from "react-use-cart";
+
 const Basket = (props) => {
-    const { image, title, price } = props;
+  
     const { addItem } = useCart();
     return (
     <Center>
         <Container maxW="container.lg">
-            <VStack h={{base: '120px', md: '150px', lg: '400px'}}>
+            <VStack pt="2em"
+                    h={{base: '120px', md: '150px', lg: '300px'}}
+                    >
                 <HStack >
                     <Image
+                        h="200px"
+                        w="150px"
                         objectFit="fill"
                         borderRadius="md"
-                        src={image}
+                        src={props.image}
                         alt="product image"/>
                 </HStack>
                 <VStack>
                     <Heading align="center"
                         fontSize={{base: 'lg',md: 'xl',lg: '2xl'}} 
                         fontWeight={450}>
-                        {title}
+                        {props.title}
                     </Heading>
                     <Heading
                         fontSize={{base: 'sm',md: 'md',lg: 'lg'}} 
                         fontWeight={400}>
-                        {price}
+                        {props.price}
                     </Heading>
                 </VStack>
-                <HStack justify={'right'}>
+                <HStack justify={'right'} key={props.id}>
                     <Button size="sm"
                         onClick={() => addItem(props.item)}
                         >Add to Cart</Button>
