@@ -17,6 +17,7 @@ import{ Center, Container,
   InputRightElement
 } from '@chakra-ui/react'
 import { ArrowBackIcon } from '@chakra-ui/icons';
+import { FcGoogle } from "react-icons/fc";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -134,7 +135,7 @@ const Signup = () => {
                         <HStack>
                         <Button color="black" 
                             onClick={signInWithGoogle}>
-                            Signup with Google
+                            Signup with &nbsp; <FcGoogle />
                           </Button>
                         </HStack>
                       </HStack>

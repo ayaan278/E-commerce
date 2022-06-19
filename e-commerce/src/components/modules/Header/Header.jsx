@@ -78,7 +78,8 @@ export default function Header() {
                                 menu1="See My Cart" 
                                 menu2="Check Out" 
                                 icon={<HiShoppingCart/>}
-                                link1="/cart"/>
+                                link1="/cart"
+                                link2="/checkout"/>
                     </span>
                     <span size='md' class="inline-block h-10 w-12 ring-white">
                         <DropdownMenu 

@@ -35,9 +35,11 @@ const SwiperBox = (props) => {
   const navigationNextRef = React.useRef(null);
 
   return (
-    <Center pt="6em" position="relative" pb={[70, 100, 250, 350]}>
+    <Center pt={{base: '0', md: '2em', lg: '6em'}} 
+            position="relative" pb={{base: '0', md: '7em', lg: '20em'}}>
       <Container maxW="container.xl">
-        <HStack pt="15em" h="300px"  w={[350, 600, 750, 1200, 1250]}>
+        <HStack pt={{base: '0', md: '10em', lg: '15em'}} 
+                h="300px"  w={{base: '350px', md: '750px', lg: '1250px'}}>
           <Swiper
             spaceBetween={180}
             navigation={{
@@ -63,9 +65,9 @@ const SwiperBox = (props) => {
               alignItems: 'center',
             }}>
               <Show breakpoint='(min-width: 400px)'>
-                <VStack top="20%" 
+                <VStack top={{base: '0', md: '10%', lg: '20%'}} 
                         left="30%"
-                        p="15px"
+                        p={[2, 15]}
                         w={[ 150, 250, 300, 400, 500]}
                         position="absolute" 
                         color="white" 

@@ -13,7 +13,7 @@ const Display = (props) => {
 
     return (
         <Center>
-            <Container p="1em" maxW="container.md">
+            <Container p={{base: '0', md: '1em', lg: '1em'}} maxW="container.lg">
                 <VStack id={tags}>
                     <HStack>
                         <Image
