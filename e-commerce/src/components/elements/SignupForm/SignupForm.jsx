@@ -10,7 +10,7 @@ const SignupForm = () => {
   return (
     <VStack p="5px">
     <Heading fontSize={{base: 'sm',md: 'md',lg: 'xl'}} fontWeight="450">Join our mailing list</Heading>
-    <HStack w={[170, 200, 250, 300, 400]}>
+    <HStack w={{base: '100%',md: '100%',lg: '100%'}}>
         <Input variant='filled' placeholder='your@email.com' />
         <Button colorScheme='#494565' >
             Submit

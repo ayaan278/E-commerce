@@ -12,6 +12,7 @@ import{ Center, Container,
   InputRightElement
 } from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons';
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -89,7 +90,7 @@ const Login = () => {
                         </HStack>
                         <HStack>
                         <Button className="login__btn login__google" onClick={signInWithGoogle}>
-                            Login with Google
+                            Login with  &nbsp; <FcGoogle/>
                           </Button>
                         </HStack>
                       </HStack>

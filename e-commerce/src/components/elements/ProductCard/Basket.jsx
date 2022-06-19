@@ -8,13 +8,13 @@ const Basket = (props) => {
     return (
     <Center>
         <Container maxW="container.lg">
-            <VStack pt="2em"
-                    h={{base: '120px', md: '150px', lg: '300px'}}
+            <VStack pt={{base: '6em', md: '5em', lg: '2em'}}
+                    h={{base: '250px', md: '300px', lg: '350px'}}
                     >
                 <HStack >
                     <Image
-                        h="200px"
-                        w="150px"
+                        h={{base: '120px', md: '120px', lg: '200px'}}
+                        w={{base: '100px', md: '100px', lg: '150px'}}
                         objectFit="fill"
                         borderRadius="md"
                         src={props.image}
@@ -33,7 +33,7 @@ const Basket = (props) => {
                     </Heading>
                 </VStack>
                 <HStack justify={'right'} key={props.id}>
-                    <Button size="sm"
+                    <Button size={{base: 'xs', md: 'sm', lg: 'sm'}}
                         onClick={() => addItem(props.item)}
                         >Add to Cart</Button>
                 </HStack>

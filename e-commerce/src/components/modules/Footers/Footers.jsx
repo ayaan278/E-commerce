@@ -16,9 +16,10 @@ const Footers = () => {
         <Stack bg="#2A254B"  p="2em" pl="3em" w="100%" direction={[ 'column', 'row']}>
           <HStack w={[300, 400, 500, 600]}>
 
-            <VStack gap="5px" alignItems={'flex-start'} w="50%" >
+            <VStack gap="5px" alignItems={'flex-start'} 
+                    w={{base: '50%', md: '50%', lg: '30%'}} >
               <Heading color="white" size='md'>Menu</Heading>
-              <Link href="/coming-soon">
+              <Link href="/shop">
                 <span>
                   All Products
                 </span>
@@ -45,7 +46,8 @@ const Footers = () => {
               </Link>
             </VStack>
 
-            <VStack gap="5px" alignItems={'flex-start'} w="50%" >
+            <VStack gap="5px" alignItems={'flex-start'} 
+                    w={{base: '50%', md: '50%', lg: '30%'}}>
               <Heading size='md'>Our Company</Heading>
               <Link href="/about">
                 <span>
@@ -75,7 +77,8 @@ const Footers = () => {
             </VStack>
           </HStack>
 
-          <HStack  alignItems={'flex-start'} w={[400, 500]}>
+          <HStack  alignItems={'flex-start'} 
+                  w={{base: '100%', md: '100%', lg: '40%'}}>
             <SignupForm/>
           </HStack>
         </Stack>
@@ -86,22 +89,17 @@ const Footers = () => {
           </HStack>
 
           <HStack w={{base: '50%',md: '50%',lg: '40%'}} gap="1em" p="1em">
-            <Link href="">
-              <span size='md' class="inline-block h-12 w-12 rounded-full ring-white">
-                <FaFacebook  style={{fontSize: '30px'}}/>
-              </span>
-            </Link>
-            <Link href="">
+            <Link href="https://www.instagram.com/_.ayaanii._/">
               <span size='md' class="inline-block h-12 w-12 ring-white" >
                 <FaInstagram style={{fontSize: '30px'}}/>
               </span>
             </Link>
-            <Link href="">
+            <Link href="https://github.com/ayaan278">
               <span size='md' class="inline-block h-12 w-12 ring-white">
                 <FaGithub  style={{fontSize: '30px'}}/>
               </span>
             </Link>
-            <Link href="">
+            <Link href="https://www.linkedin.com/in/ayaan-ahmad-06545614a">
               <span size='md' class="inline-block h-12 w-12 ring-white">
                 <FaLinkedin style={{fontSize: '30px'}}/>
               </span>

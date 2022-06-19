@@ -13,14 +13,14 @@ import vase2 from '../../../assets/Products/Vase2.jpg'
 import lamp1 from '../../../assets/Products/Lamp1.jpg'
 const Collections = () => {
   return (
-    <Center p="3em">
+    <Center p={{base: '0.25em', md: '1.5em', lg: '3em'}}>
         <Container maxW="container.xl">
             <VStack >
                 <Heading
                     fontSize={{base: 'lg',md: '2xl',lg: '3xl'}} 
                     fontWeight={700} 
                     ml={5}>Our Popular Products</Heading>
-                <Stack p="2em" 
+                <Stack p={"2em"}
                     align="center"
                     direction={[ 'column', 'row']}>
                     <HStack>
