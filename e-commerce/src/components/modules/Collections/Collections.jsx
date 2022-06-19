@@ -6,7 +6,7 @@ import { Center,
     HStack, 
     Heading } from '@chakra-ui/react';
 import ViewCollection from '../../elements/Buttons/ViewCollection'
-import Display from '../../elements/ProductCard/Display'
+import Display from '../ProductCard/Display'
 import chair1 from '../../../assets/Products/Chair1.jpg'
 import vase1 from '../../../assets/Products/Vase1.jpg'  
 import vase2 from '../../../assets/Products/Vase2.jpg'

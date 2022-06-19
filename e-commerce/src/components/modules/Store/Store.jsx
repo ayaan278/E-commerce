@@ -1,7 +1,7 @@
 import React from 'react'
 import { Center , Container, SimpleGrid, Spacer, } from '@chakra-ui/react'
 import Products from '../Products/Products'
-import Basket from '../../elements/ProductCard/Basket'
+import Basket from '../ProductCard/Basket'
 const Store = () => {
   return (
     <Center>

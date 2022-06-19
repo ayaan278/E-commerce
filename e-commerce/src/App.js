@@ -5,6 +5,7 @@ import About from './components/templates/About';
 import Shop from './components/templates/Shop';
 import Contact from './components/templates/Contact';
 import Cart from './components/templates/Cart';
+import Checkout from './components/templates/Checkout';
 import Login from './components/templates/Login';
 import Signup from './components/templates/Signup';
 import ComingSoon from './components/templates/ComingSoon';
@@ -21,6 +22,7 @@ function App() {
               <Route exact path="/shop" element = {<Shop/>} />
               <Route exact path="/contact" element = {<Contact/>} />
               <Route exact path="/cart" element = {<Cart/>} />
+              <Route exact path="/checkout" element = {<Checkout/>} />
               <Route exact path="/log-in" element = {<Login/>} />
               <Route exact path="/sign-up" element = {<Signup/>} />
               <Route exact path="/coming-soon" element = {<ComingSoon/>} />
