@@ -12,8 +12,8 @@ const Shop = (props) => {
                 >All Products</Heading>
       </HStack>
       <HStack w="100%"  justify="initial">
-      <Show breakpoint='(min-width: 400px)'>
-        <VStack w={{base: null, md: '20%', lg: '25%'}}>
+      <Show breakpoint='(min-width: 500px)'>
+        <VStack w={{base: null, sm: null, md: '20%', lg: '25%'}}>
             <Filters/>
         </VStack>
       </Show>
