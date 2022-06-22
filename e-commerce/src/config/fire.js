@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import {
+import { getAnalytics } from "firebase/analytics";import {
   GoogleAuthProvider,
   getAuth,
   signInWithPopup,
@@ -17,13 +17,13 @@ import {
   addDoc,
 } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyA01owCWIR1000_tYJbaAvWsTD7msyGNk0",
-  authDomain: "single-inquiry-342204.firebaseapp.com",
-  projectId: "single-inquiry-342204",
-  storageBucket: "single-inquiry-342204.appspot.com",
-  messagingSenderId: "865309671911",
-  appId: "1:865309671911:web:68c9cc0a47abf3c4fc7d42",
-  measurementId: "G-KG2BZC19M7"
+  apiKey: "AIzaSyCOMtMj2VOqOVPBtcWRQNcZelkIMx2hL3I",
+  authDomain: "e-commerce-ayaan.firebaseapp.com",
+  projectId: "e-commerce-ayaan",
+  storageBucket: "e-commerce-ayaan.appspot.com",
+  messagingSenderId: "1063124734463",
+  appId: "1:1063124734463:web:0fa3692bd15c481daa97ca",
+  measurementId: "G-GZ0VV3E892"
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -93,3 +93,4 @@ export {
   sendPasswordReset,
   logout,
 };
+const analytics = getAnalytics(app);
