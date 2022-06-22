@@ -2,7 +2,7 @@ import React from 'react'
 import { Center, Container, 
     HStack, VStack, 
     Heading, Button,  
-    Divider, 
+    Stack,
     TableContainer,
     Popover,
     PopoverTrigger,
@@ -19,17 +19,15 @@ const Checkout = () => {
   return (
     <Center pt="3em">
         <Container maxW="container.xl">
-            <HStack>
-                <VStack w="50%" h="520px">
+            <Stack w="100%" h="100%" justifyContent="center" 
+                  direction={[ 'column', 'row']}>
+                <VStack w={{base: '100%', md: '50%', lg: '50%'}} h="520px">
                     <HStack>
                         <Heading>Billing Details</Heading>
                     </HStack>
                     <Billing/>
                 </VStack>
-                <Center height='20em'>
-                    <Divider orientation='vertical' />
-                </Center>
-                <VStack w="50%" h="520px">
+                <VStack h="520px" w={{base: '100%', md: '50%', lg: '50%'}}>
                     <HStack>
                         <Heading>Your order Summary</Heading>
                     </HStack>
@@ -62,7 +60,7 @@ const Checkout = () => {
                     </Popover>
                     
                 </VStack>
-            </HStack>
+            </Stack>
         </Container>
     </Center>
   )

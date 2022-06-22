@@ -1,11 +1,11 @@
 import React from 'react'
-import { Center, Container, VStack, Heading, Checkbox, CheckboxGroup, } from '@chakra-ui/react'
+import { Center, Container, VStack, Heading, Checkbox, CheckboxGroup,} from '@chakra-ui/react'
 
 const Filters = () => {
   return (
     <Center p="2em">
         <Container maxW="container.lg">
-            <VStack gap="1em">
+            <VStack gap="1em" pos="sticky">
                 <VStack>
                     <Heading fontSize={{base: 'md',md: 'xl',lg: '2xl'}}
                             p="0.5em"
