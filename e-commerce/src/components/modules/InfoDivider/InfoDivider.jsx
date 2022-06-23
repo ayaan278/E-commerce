@@ -31,7 +31,7 @@ const InfoDivider = () => {
                     <InfoCard 
                         icon={<TbTruckDelivery/>}
                         title="Delivery Next Day" 
-                        description="Order before 3pm and get your order the enxt day as standard"/>
+                        description="Order before 3pm and get your order the next day as standard"/>
                     <InfoCard 
                         icon={<FcApproval/>}
                         title="Made by true artisans" 

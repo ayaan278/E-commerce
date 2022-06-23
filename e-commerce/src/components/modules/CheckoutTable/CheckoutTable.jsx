@@ -1,8 +1,6 @@
 import React from 'react'
 import {  useCart } from "react-use-cart";
-import { 
-    HStack, 
-    Heading,  
+import {   
     Spacer, 
     Table,
     Thead, 
@@ -14,6 +12,7 @@ const CheckoutTable = () => {
     const {
         items,
         cartTotal,
+        totalItems,
     } = useCart();
   return (
     <Table>
@@ -54,7 +53,9 @@ const CheckoutTable = () => {
                 <Th fontSize={{base: "md", md: "lg", lg:"xl"}}>
                     Total:
                 </Th>
-                <Th></Th>
+                <Th fontSize={{base: "md", md: "lg", lg:"xl"}}>
+                    {totalItems}
+                </Th>
                 <Th fontSize={{base: "md", md: "lg", lg:"xl"}}>
                     ${cartTotal}
                 </Th>

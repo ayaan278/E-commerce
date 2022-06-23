@@ -9,21 +9,22 @@ import { Center, Container,
 const ShowCart = () => {
   const {
     isEmpty,
-    totalUniqueItems,
+    totalItems,
     items,
     cartTotal,
     updateItemQuantity,
     removeItem,
   } = useCart();
 
-  if (isEmpty) return <Heading>Your cart is empty</Heading>;
-  var total = 0;
+  if (isEmpty) return (
+  <HStack>
+    <Heading>Your cart is empty</Heading>
+  </HStack>);
+
   return (
     <Center>
         <Container maxW="container.lg" m="1em"
           p={{base: '0', md: '1.5em', lg: '2em'}}>
-           {/* <Heading>Cart {{ totalUniqueItems }}</Heading> */}
-
         {items.map((item) => (
             <HStack key={item.id} w="100%" h="220px" 
                     m={{ base: '1em', md: '1em', lg: '1.5em' }}
@@ -75,12 +76,16 @@ const ShowCart = () => {
             ))}
             <Divider/>
             <HStack m="1em">
-              <HStack p="1em">
+              <VStack gap="0.75em">
                 <Heading fontSize={{base: 'md',md: 'xl',lg: '3xl'}}
                           fontWeight="500px">
                   Total price: ${cartTotal}
                 </Heading>
-              </HStack>
+                <Heading fontSize={{base: 'md',md: 'xl',lg: '3xl'}}
+                          fontWeight="500px">
+                  Total items: {totalItems}
+                </Heading>
+              </VStack>
               <Spacer/>
               <Link href="/checkout">
                 <Button size={{base: 'xs', md: 'sm', lg: 'sm'}}>Proceed to Checkout</Button>

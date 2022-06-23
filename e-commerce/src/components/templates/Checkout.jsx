@@ -34,7 +34,7 @@ const Checkout = () => {
                     <TableContainer pt="2em">
                         <CheckoutTable/>
                     </TableContainer>
-                    <Popover pt="2em">
+                    <Popover pt="2em" placement='bottom'>
                         <PopoverTrigger>
                             <Button size="lg" w="200px"
                                     bg="black" color="white"
